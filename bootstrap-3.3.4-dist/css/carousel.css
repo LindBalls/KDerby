@@ -18,7 +18,7 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-  filter: alpha(opacity=0);
+  margin-top: 400px !important;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -153,12 +153,19 @@ body {
 */
 
 
-.container-full {
-  width: 35%;
-  margin: none;
-  text-align: center;
+
+
+.navbar{
+  background-color: green;
 
 }
+
+.navbar-inverse .navbar-nav li a{
+  color: #000 !important;
+
+}
+
+
 
 .navbar-nav > li > a{
   padding: none !important;
