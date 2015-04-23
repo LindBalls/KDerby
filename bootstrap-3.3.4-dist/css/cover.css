@@ -27,7 +27,11 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-image: url('../../images/headerbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  margin: 0px
 }
 body {
   color: #fff;
@@ -36,25 +40,33 @@ body {
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
+.content-wrapper {
   display: table;
   width: 100%;
-  height: 80%;
+  height: 95%;
   min-height: 68%;
   margin-bottom: -46px;
 }
   /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
 
-.site-wrapper2 {
+.content-wrapper2 {
   width: 100%;
-  height: 80%;
+  height: 100%;
   min-height: 68%;
   margin-bottom: -46px;
   background-image: url('../../images/paperbg.jpg');
   background-repeat: repeat;
 }
 
+.content-wrapper3 {
+  width: 100%;
+  height: 100%;
+  min-height: 68%;
+  margin-bottom: -46px;
+  background: #fff;
+  background-repeat: repeat;
+}
 
 .site-wrapper-inner {
   display: table-cell;
@@ -105,8 +117,9 @@ body {
 
 .nav-schedule {
     width: 100%;
-    height: 30px;
-    left: 0px;
+    height: 318px;
+    margin-left: -38px;
+    margin-top: 55px;
 
 }
 
@@ -118,32 +131,86 @@ body {
   float: left;
 }
 
+h1 {
+  font-family: LeagueGothic-Regular;
+  text-transform: uppercase;
+  color: #5e5e5e;
+  letter-spacing: 6px;
+  font-size: 35px;
+}
+
+p.schedule-copy {
+  color: #5e5e5e;
+  width: 60%;
+  margin-left: 95px;
+}
+
 .ribbon {
-    width: 100%;
+    width: 105%;
+    overflow: hidden;
     height: 8px !important;
     background: url("../../images/spikes.png") repeat-x;
     padding-top: 0px;
     margin-left: -6px;
+    margin-bottom: -200px;
+}
+
+.ribbon2 {
+    width: 100%;
+    height: 8px !important;
+    background: url("../../images/reversedspikes.png") repeat-x;
+    padding-top: 0px;
+    margin-left: -6px;
     margin-bottom: -95px;
+    margin-top: 46px;
 }
 
 .container {
     margin-top: 95px;
 }
 
-.equestrian {
+.equestricon {
 
 
 }
 
-.equestrian2016 {
-    font-family: montserrat-hairline;
+.equestricon2016 {
+    font-family: LeagueGothic-Regular;
+    color: #5e5e5e;
+    text-transform: uppercase;
+    padding-top: 38px;
+}
 
+p {
+
+  color: #5e5e5e;
 }
 
 .date {
 
 
+}
+
+.row-two {
+  margin-left: 42px;
+  margin-top: 30px;
+}
+
+.horse-two {
+  padding: none !important;
+  margin: none !important;
+  width: 30.333333%;
+}
+
+.horse-three {
+  padding: none !important;
+  margin: none !important;
+  width: 66.66666667%;
+}
+
+.contentheader {
+  padding-top: 50px;
+  margin-bottpm: 50px;
 }
 
 .cover-container2 {
@@ -260,4 +327,12 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+
+
+@font-face {
+    font-family: LeagueGothic-Regular;
+    src: url('../../fonts/LeagueGothic-Regular.otf');
+    font-weight:400;
 }
