@@ -28,22 +28,22 @@ html,
 body {
   height: 100%;
   background-size: cover;
-  background-image: url('../../images/headerbg.jpg');
+  background-image: url('../images/headerbg.jpg') !important;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center top;
+  background-position: left top;
   margin: 0px
 }
 
 @font-face {
     font-family: Oswald-Light;
-    src: url('fonts/Oswald-Light.ttf');
+    src: url('../fonts/Oswald-Light.ttf');
     font-weight:400;
 }
 
 
 body {
-  color: #fff;
+
   font-family: Oswald-Light;
   text-align: center;
   /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
@@ -53,9 +53,9 @@ body {
 .content-wrapper {
   display: table;
   width: 100%;
-  height: 95%;
+  height: 100%;
   min-height: 68%;
-  margin-bottom: -46px;
+  margin-bottom: -6px;
 }
   /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
@@ -64,8 +64,8 @@ body {
   width: 100%;
   height: 100%;
   min-height: 68%;
-  margin-bottom: -46px;
-  background-image: url('../../images/paperbg.jpg');
+  margin-bottom: 0px;
+  background-image: url('../images/paperbg.jpg');
   background-repeat: repeat;
 }
 
@@ -135,15 +135,16 @@ body {
 .nav-schedule {
   width: 100%;
   /* overflow: hidden !important; */
-  height: 318px;
+  height: 600px;
   padding-left: 0px;
   margin-top: 55px;
+  margin-bottom: 40px;
 
 }
 
 .nav-schedule li {
-  width: 33%;
-  height: 318px;
+  width: 100%;
+  height: 600px;
   left: 0px;
   list-style-type: none;
   float: left;
@@ -159,42 +160,41 @@ h1 {
 
 p.schedule-copy {
   color: #5e5e5e;
-  width: 75%;
-  margin-left: 50px;
-
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ribbon {
-    width: 108%;
+    width: 101%;
     overflow: hidden !important;
     height: 8px !important;
-    background: url("../../images/spikes.png") repeat-x;
+    background: url("../images/spike2.png") repeat-x;
     padding-top: 0px;
     margin-left: -6px;
-    margin-bottom: -244px;
+    margin-bottom: 0px;
 }
 
 .ribbon2 {
     width: 100%;
     height: 8px !important;
-    background: url("../../images/spikes.png") repeat-x;
+    background: url("../images/paperspikes.png") repeat-x;
     padding-top: 0px;
     margin-left: -6px;
-    margin-bottom: -95px;
-    margin-top: 375px;
+
 }
 
 .ribbon3 {
   width: 100%;
   height: 21px !important;
-  background: url("../../images/reversedspikes.png") repeat-x;
+  background: url("../images/reversedspikes.png") repeat-x;
   margin-left: -6px;
   margin-bottom: 15px;
   margin-top: 204px;
 }
 
 .container {
-    margin-top: 95px;
+    margin-top: 0px;
 }
 
 .equestricon {
@@ -203,8 +203,11 @@ p.schedule-copy {
 }
 
 .bottom-gallery {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: 95%;
+  margin-right: 0px;
+  margin-left: -27px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 h3 {
@@ -280,16 +283,23 @@ h3.location {
   margin-top: 30px;
 }
 
+.horse_top {
+  width: 99%;
+  margin-right: auto;
+  margin-left: -5%;
+  margin-bottom: 25px;
+}
+
 .horse-two {
   padding: none !important;
   margin: none !important;
-  width: 30.333333%;
+  width: 29.333333%;
 }
 
 .horse-three {
-  padding: none !important;
-  margin: none !important;
-  width: 65.666667%;
+
+  width: 67%;
+  padding-left: 6.5%;
 }
 
 .contentheader {
@@ -357,13 +367,28 @@ h3.location {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
+
+
+
+/*@media (min-width: 768px)
+and (max-device-width : 1320px)*/
+@media only screen and (min-device-width: 786px) and (max-device-width: 1320px) {
+    /* STYLES HERE */
+
   .masthead-brand {
     float: left;
   }
   .masthead-nav {
     float: right;
   }
+
+  .nav-schedule li {
+    width: 100%;
+    height: 600px;
+
+  }
+
+
 }
 
 
@@ -398,7 +423,7 @@ h3.location {
   width: 100%;
   height: 200PX;
   min-height: 50%;
-  background-image: url('../../images/paperbg.jpg');
+  background-image: url('../images/paperbg.jpg');
   background-repeat: repeat;
 }
 
@@ -435,7 +460,18 @@ h3.location {
   .cover-container {
     width: 700px;
   }
+
+  .horse_top {
+    margin-bottom: 30px;
+
+
+    width: 100%;
+  }
+
 }
+
+
+
 
 
 @media only screen
@@ -443,11 +479,13 @@ and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : portrait) {
   /* STYLES GO HERE */
-
+body {
+  font-family: Oswald-Light;
+}
 
 .inner {
     padding: 30px;
-    height: 435px;
+    height: 565px;
     margin-bottom: 0px;
 }
 
@@ -456,14 +494,12 @@ and (orientation : portrait) {
       height: 318px;
       margin-left: 0px;
       margin-top: 55px;
-
-
 }
 
 .nav-schedule li {
     width: 100%;
     height: 650px;
-
+    font-family: Oswald-Light;
 }
 
 .content-wrapper {
@@ -491,12 +527,14 @@ and (orientation : portrait) {
 }
 
 .horse-two {
-  width: 109%;
+  width: 105%;
+
 }
 
 
 .horse-two img {
   margin-bottom: 30px;
+  width: 110%;
 }
 
 .horse-three img {
@@ -512,6 +550,7 @@ and (orientation : portrait) {
 }
 
 .horse_top {
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -531,7 +570,9 @@ p.bottom-copy {
 }
 
 .bottom-gallery {
-  width: 100%;
+  width: 99%;
+  margin-left: 22px;
+  margin-right: -1px;
 }
 
 .logo-bottom img{
@@ -549,5 +590,3 @@ p.bottom-copy {
 h3 {
     margin-bottom: 30px;
 }
-
-
