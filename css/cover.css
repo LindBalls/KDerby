@@ -34,8 +34,17 @@ body {
   background-position: center top;
   margin: 0px
 }
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url('fonts/Oswald-Light.ttf');
+    font-weight:400;
+}
+
+
 body {
   color: #fff;
+  font-family: Oswald-Light;
   text-align: center;
   /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
@@ -542,16 +551,3 @@ h3 {
 }
 
 
-
-
-@font-face {
-    font-family: LeagueGothic-Regular;
-    src: url('../../fonts/LeagueGothic-Regular.otf');
-    font-weight:400;
-}
-
-@font-face {
-    font-family: Oswald-Light;
-    src: url('../../fonts/Oswald-Light.ttf');
-    font-weight:400;
-}
